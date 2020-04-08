@@ -1,0 +1,8 @@
+{
+    "Job": true,
+    "Candidate": true,
+    "Employer": true,
+    "Blog": true,
+    "Base": true,
+    "Company": true
+}
