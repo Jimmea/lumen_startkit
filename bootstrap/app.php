@@ -21,6 +21,8 @@ collect(scandir(__DIR__ . '/../config'))->each(function ($item) use ($app) {
     $app->configure(basename($item, '.php'));
 });
 $app->configure('modules');
+$app->configure('debugbar');
+
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
@@ -80,6 +82,10 @@ $app->singleton('cookie', function () use ($app)
 });
 $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 
+
+if (env('APP_DEBUG')) {
+    $app->register(Barryvdh\Debugbar\LumenServiceProvider::class);
+}
 
 $app->register(\App\Providers\LoadPackageServiceProvider::class);
 $app->register(Irazasyed\Larasupport\Providers\ArtisanServiceProvider::class);
