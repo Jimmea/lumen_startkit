@@ -18,10 +18,13 @@
 - [Laravel Cors](https://github.com/barryvdh/laravel-cors)
 - [PHP-VCR](https://github.com/php-vcr/php-vcr)
 
+## Document
+- [Git flow]()
+- [Git tag](docs/git_tag.md)
+
 ## Technology
 - [Beanstalk](https://beanstalkd.github.io/) Beanstalk is a simple, fast work queue.
                                              
-
 
 ## Use Packages
 - [laravel-beanstalkd-admin-ui](https://github.com/Dionera/laravel-beanstalkd-admin-ui) An Admin UI for Beanstalkd and Laravel
