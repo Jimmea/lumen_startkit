@@ -1,6 +1,5 @@
 # A Boilerplate for yor Web & API server built
 ## What is needed to Install?
-
 1. PHP >=7.2 with extension requirements given as in Laravel's documentation.
 2. Install web server: apache or nginx
 3. Node & NPM LTS Stable Release.
@@ -9,9 +8,7 @@
 6. Install server Redis
 7. Install server Elastic search
 
-
 ## A RESTful API features included:
-
 - [Lumen 6x](https://lumen.laravel.com/docs/6.x).
 - [JWT Auth](https://github.com/tymondesigns/jwt-auth) for Lumen Application. <sup>[1]</sup>
 - [Dingo](https://github.com/dingo/api) to easily and quickly build your own API. <sup>[1]</sup>
@@ -21,19 +18,21 @@
 - [Laravel Cors](https://github.com/barryvdh/laravel-cors)
 - [PHP-VCR](https://github.com/php-vcr/php-vcr)
 
+## Technology
+- [Beanstalk](https://beanstalkd.github.io/) Beanstalk is a simple, fast work queue.
+                                             
+
 
 ## Use Packages
-- [Beanstalkd](https://beanstalkd.github.io/) support for simple, fast queue work
-
+- [laravel-beanstalkd-admin-ui](https://github.com/Dionera/laravel-beanstalkd-admin-ui) An Admin UI for Beanstalkd and Laravel
 
 
 ## What this repo contains?
-
 1. E-Mail Verification/Confirmation for new users.
 2. JWT Setup for your APIs.
 3. Transform Request Middleware for your boolean inputs in requests.
 4. Basic Contracts to Repositories binding sample for Auth Logic.
-
+5. Queue: beanstalk
 
 
 ## For Debugging
@@ -42,7 +41,6 @@
 - [Bugsnag for Laravel](https://github.com/bugsnag/bugsnag-laravel)
 
 ## How you can install?
- 
 ```sh
 # Installs all the necessary packages required to run the app
 > composer install;
