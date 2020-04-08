@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Laravel\Lumen\Routing\UrlGenerator;
@@ -25,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
+//        if (env('APP_ENV') === 'production') {
+//            URL::forceSchema('http');
+//        }
+
         class_alias(\Illuminate\Support\Facades\Artisan::class, 'Artisan');
         Schema::defaultStringLength(191);
     }

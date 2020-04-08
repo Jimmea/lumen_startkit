@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>Welcome {{ app()->version() }}</h1>
+    <p>Route: {{ route('api.home.index') }}</p>
 </body>
 </html>
